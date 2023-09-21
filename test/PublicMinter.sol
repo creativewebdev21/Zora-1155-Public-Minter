@@ -2,19 +2,19 @@
 pragma solidity ^0.8.10;
 
 import {Test} from "@forge-std/src/Test.sol";
-import {SmartWalletMinter} from "../src/SmartWalletMinter.sol";
+import {PublicMinter} from "../src/PublicMinter.sol";
 import {ZoraDropMock} from "./mocks/ZoraDropMock.sol";
 import {ERC6551RegistryMock} from "./mocks/ERC6551RegistryMock.sol";
 
-contract SmartWalletMinterTest is Test, ERC6551RegistryMock {
-    SmartWalletMinter public adapter;
+contract PublicMinterTest is Test, ERC6551RegistryMock {
+    PublicMinter public adapter;
     ZoraDropMock public drop;
     address public DEFAULT_MINTER = address(0x01);
     address public DEFAULT_MINTER_TWO = address(0x02);
     address public DEFAULT_MINT_REFERRAL = address(0x0333);
 
     function setUp() public {
-        adapter = new SmartWalletMinter();
+        adapter = new PublicMinter();
         drop = new ZoraDropMock();
         _setupErc6551();
     }
