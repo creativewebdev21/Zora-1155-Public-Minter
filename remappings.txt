@@ -1,6 +1,9 @@
 @openzeppelin/=lib/openzeppelin-contracts/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts
 @ERC721A/=lib/ERC721A/
 @forge-std/=lib/forge-std/
 lib/erc6551/=lib/ERC6551/src/
 erc6551/=lib/ERC6551/src/
 lib/tokenbound/lib/erc6551/=lib/ERC6551/src/
+@zora=lib/zora/src/
+@imagine=lib/zora/_imagine/mint
