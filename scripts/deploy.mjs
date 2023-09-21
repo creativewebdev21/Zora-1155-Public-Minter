@@ -14,7 +14,7 @@ export async function deployMinter(
   _referralFee
 ) {
   console.log("deploying smart wallet minter");
-  const contractLocation = "src/SmartWalletMinter.sol:SmartWalletMinter";
+  const contractLocation = "src/PublicMinter.sol:PublicMinter";
   const args = [];
   const contract = await deployAndVerify(contractLocation, args);
   const contractAddress = contract.deployed.deploy.deployedTo;

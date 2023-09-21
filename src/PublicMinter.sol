@@ -5,9 +5,9 @@ import {IZoraRewardsMint} from "./interfaces/IZoraRewardsMint.sol";
 import {ERC6551} from "./utils/ERC6551.sol";
 import {Enjoy} from "./utils/Enjoy.sol";
 
-/// @title SmartWalletMinter
+/// @title PublicMinter
 /// @notice A contract for minting tokens with rewards and creating token-bound accounts.
-contract SmartWalletMinter is Enjoy, ERC6551 {
+contract PublicMinter is Enjoy, ERC6551 {
     /// @notice Mints new tokens with rewards and creates token-bound accounts.
     /// @dev This function calls the `mintWithRewards` function from the IRewardsDrop contract and the `createTokenBoundAccounts` from the ERC6551 contract.
     /// @param _target The address of the ERC721Drop contract to interact with.
