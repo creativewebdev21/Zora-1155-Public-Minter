@@ -7,5 +7,3 @@ erc6551/=lib/ERC6551/src/
 lib/tokenbound/lib/erc6551/=lib/ERC6551/src/
 @zora=lib/zora/src/
 @imagine=lib/zora/_imagine/mint
-ds-test/=lib/forge-std/lib/ds-test/src/
-forge-std/=lib/forge-std/src/
